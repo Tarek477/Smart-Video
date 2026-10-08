@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive Premium Video</title>
+    <title>Smart Video - Exclusive Premium Video</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
     
     <!-- Popunder Ad Script -->
     <script src="https://pl31722350.profitableratecpmnetwork.com/f9/4c/ed/f94ced23dae3d3e7bb799dc79532b30d.js"></script>
@@ -40,8 +47,11 @@
         .live-badge { background: #ff0033; color: #fff; font-size: 13px; font-weight: bold; padding: 5px 10px; border-radius: 4px; animation: blink 1.5s infinite; letter-spacing: 1px; }
         .hd-badge { background: rgba(0,0,0,0.7); border: 1px solid #fff; color: #fff; font-size: 12px; font-weight: bold; padding: 4px 8px; border-radius: 3px; }
         .play-group { align-self: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        
+        /* Play Button with SVG Icon */
         .center-play { width: 80px; height: 80px; background-color: rgba(255, 0, 51, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.8); animation: pulse-red 1.5s infinite; }
-        .center-play::after { content: ''; border-top: 18px solid transparent; border-bottom: 18px solid transparent; border-left: 26px solid #fff; margin-left: 8px; }
+        .center-play svg { width: 35px; height: 35px; fill: #ffffff; margin-left: 5px; }
+        
         .click-text { margin-top: 15px; font-size: 18px; font-weight: 900; color: #ffffff; letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,1); animation: blink 1s infinite; }
         @keyframes pulse-red { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 51, 0.9); } 70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(255, 0, 51, 0); } 100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 51, 0); } }
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
@@ -94,9 +104,13 @@
                         <span class="hd-badge">4K ULTRA HD</span>
                     </div>
                     
-                    <!-- Central Play Group with Text -->
+                    <!-- Central Play Group with SVG Icon -->
                     <div class="play-group">
-                        <div class="center-play"></div>
+                        <div class="center-play">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
                         <div class="click-text">CLICK TO PLAY</div>
                     </div>
                     
